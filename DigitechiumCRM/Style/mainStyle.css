@@ -1,0 +1,253 @@
+/* * * Container Styles * * */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.row {
+    height: 80vmin;
+}
+
+/* * * Header Styles * * */
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 14px 1px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #b8faef;
+    border-radius: 5px;
+}
+
+.logOut {
+    background: url(../Images/signOut.png) no-repeat;
+}
+
+.user {
+    background: url(../Images/user.png) no-repeat;
+}
+
+.notification {
+    background: url(../Images/notification.png) no-repeat;
+}
+
+/* * * Container Styles * * */
+.row {
+    height: 100vmin;
+}
+
+header {
+    background-color: #09fbd3;
+    color: white;
+    height: 70px;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item .nav-link {
+    width: 95%;
+    color: #FFF;
+}
+
+.nav-item .nav-link:hover {
+    color: #09FBD3;
+}
+
+a.activate {
+    color: #FFF;
+    background-color: #09FBD3;
+    text-align: center;
+    margin: 3px;
+    font-size: large;
+}
+
+.create-event {
+    margin: 16px 5px;
+    padding: 3px 25px 4px;
+    background-color: transparent;
+    color: #000;
+    outline: none !important;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.create-event:hover {
+    background-color: rgb(0, 0, 0);
+    color: #FFF;
+}
+
+.create-event:active {
+    background-color: rgba(0, 0, 0, 0.76);
+    color: #FFF;
+}
+
+/* Copyright */
+.copyright {
+    position: absolute;
+    text-align: center;
+    bottom: 5;
+    left: 0;
+    font-size: small;
+    width: 100%;
+}
+
+.copyright-bottom {
+    visibility: hidden;
+}
+
+/* End copyright */
+
+/* Awesome buttom */
+.awesomeBtn {
+    padding: 10px 15px;
+    margin: 2px;
+    font-size: 1em;
+    background-color: #000;
+    color: #FFF;
+    border: 2px solid #09FBD3;
+    border-radius: 10px;
+    outline: #09FBD3 !important;
+    transition: border .5s;
+}
+
+.awesomeBtn:hover {
+    background-color: #ffffff23;
+}
+
+.awesomeBtn:active {
+    background-color: #09FBD3;
+}
+
+/* End Awesome Bottom */
+
+/* * * * * Side bar * * * * */
+#wrapper {
+    /* overflow-x: hidden; */
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    background-color: #000;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+
+    .h-100 {
+        height: 80% !important;
+    }
+}
+
+.list-group-item {
+    background-color: transparent;
+}
+
+.list-group ul li a:hover {
+    color: #09FBD3;
+    font-size: large;
+}
+
+.list-group ul li a {
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.activate {
+    font-size: larger;
+    color: #FFF;
+    margin: 5px auto;
+    border-radius: 5px !important;
+    background-color: #09FBD3;
+}
+
+.activate:hover {
+    color: #FFF !important;
+}
+
+.phone-bar {
+    background-color: #000;
+    color: #FFF;
+}
+
+/* * * * * End Side bar * * * * */
+
+
+/********** Extra large devices only **********/
+@media (min-width: 1200px) {
+    .sidenav {
+        background-color: #000;
+        height: 100%;
+        padding: 0;
+    }
+}
+
+/********** Large devices only **********/
+@media (min-width: 993px) and (max-width: 1199px) {
+    .sidenav {
+        background-color: #000;
+        height: 100%;
+        padding: 0;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 769px) and (max-width: 992px) {}
+
+/********** Small devices only **********/
+@media (max-width: 768px) {
+    .sidenav {
+        height: min-content;
+    }
+
+    #logo {
+        left: 10px;
+    }
+
+}
