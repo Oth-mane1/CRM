@@ -77,6 +77,10 @@ h1 {
     color: #08f7fe;
 }
 
+.signup a:hover {
+    color: #00cfd6;
+}
+
 .submitBtn {
     margin: auto;
     display: block;

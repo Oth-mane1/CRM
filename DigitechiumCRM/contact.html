@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CRM | CONTACT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style/bootstrap.css">
+    <link rel="stylesheet" href="Style/mainStyle.css">
+    <link rel="stylesheet" href="Style/contactStyle.css">
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <a href="#"><img class="float-left" id="logo" src="Images/DigitechiumLogo.png" alt="DigiTeckium logo"></a>
+        <div class="float-right logOut icon"></div>
+        <div class="float-right user icon"></div>
+        <div class="float-right notification icon"></div>
+    </header>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="list-group list-group-flush">
+                <ul>
+                    <li><a href="dashBoard.html" class="list-group-item">Dashboard</a></li>
+                    <li><a href="agenda.html" class="list-group-item">Agenda</a></li>
+                    <li><a href="contact.html" class="list-group-item activate">Contact</a></li>
+                    <li><a href="TC.html" class="list-group-item">Tableau Commercial</a></li>
+                    <li><a href="email.html" class="list-group-item">E-mail</a></li>
+                    <li><a href="sms.html" class="list-group-item">SMS</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="d-lg-none d-md-none phone-bar">
+                <button class="d-lg-none d-md-none d-xl-none" id="menu-toggle"></button>
+                <h3 class="text-center" id="header-phone">Contact</h3>
+            </div>
+            <div class="container-fluid mb-5" id="page-content-wrapper">
+                <div class="container">
+                    <div class="row mb-5 overflow-auto">
+                        <h1>Liste du Contacts</h1>
+                        <table class="ml-2 mr-2" id="clients">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nom Complet</th>
+                                <th>Adresse</th>
+                                <th>Téléphone</th>
+                                <th>E-mail</th>
+                                <th>Chiffre d'affaire</th>
+                            </tr>
+                            <tr>
+                                <td>c1</td>
+                                <td>nom1 prenom1</td>
+                                <td>Gueliz Marrakech</td>
+                                <td>0607080900</td>
+                                <td>exemple1.email@gmail.com</td>
+                                <td>50000 DH</td>
+                            </tr>
+                            <tr>
+                                <td>c2</td>
+                                <td>nom2 prenom2</td>
+                                <td>Gueliz Marrakech</td>
+                                <td>0607080900</td>
+                                <td>exemple2.email@gmail.com</td>
+                                <td>60000 DH</td>
+                            </tr>
+                            <tr>
+                                <td>c3</td>
+                                <td>nom3 prenom3</td>
+                                <td>Gueliz Marrakech</td>
+                                <td>0607080900</td>
+                                <td>exemple3.email@gmail.com</td>
+                                <td>1000 DH</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <div class="row">
+                        <button class="awesomeBtn" type="button" data-toggle="collapse" data-target="#ModifyContact"
+                            aria-expanded="false" aria-controls="ModifyContact">
+                            Modifier
+                        </button>
+                    </div>
+                    <div class="collapse" id="ModifyContact">
+                        <div class="card card-body">
+                            <form>
+                                <h1>Modifier un Contact</h1>
+                                <p class="sub-head mb-5">Remplir le formulaire ci-dessous pour Modifier un Contact</p>
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>ID</label>
+                                </div>
+
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>Nom Complet</label>
+                                </div>
+
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>Adresse</label>
+                                </div>
+
+
+                                <div class="textBox">
+                                    <input class="input" type="tel" required>
+                                    <span class="bar"></span>
+                                    <label>Téléphone</label>
+                                </div>
+
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>E-mail</label>
+                                </div>
+
+                                <button class="awesomeBtn">Ajouter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <form>
+                            <h1>Ajout Contact</h1>
+                            <p class="sub-head mb-5">Remplir le formulaire ci-dessous pour ajouter un Contact</p>
+                            <div class="textBox">
+                                <input class="input" id="inputId" type="text" required>
+                                <span class="bar" id="bar"></span>
+                                <span id="limit" style="
+                                float: right;
+                                position: relative;
+                                top: -30px;
+                                right: 5px;">0</span>
+                                <label id="IdBar">ID</label>
+                            </div>
+
+                            <div class="textBox">
+                                <input class="input" type="text" required>
+                                <span class="bar"></span>
+                                <label>Nom Complet</label>
+                            </div>
+
+                            <div class="textBox">
+                                <input class="input" type="text" required>
+                                <span class="bar"></span>
+                                <label>Adresse</label>
+                            </div>
+
+
+                            <div class="textBox">
+                                <input class="input" type="tel" required>
+                                <span class="bar"></span>
+                                <label>Téléphone</label>
+                            </div>
+
+                            <div class="textBox">
+                                <input class="input" type="text" required>
+                                <span class="bar"></span>
+                                <label>E-mail</label>
+                            </div>
+
+                            <button class="awesomeBtn">Ajouter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="JavaScripts/jquery.js"></script>
+    <script src="JavaScripts/bootstrap.js"></script>
+
+    <!-- Scripts -->
+    <script>
+        const input = document.getElementById("inputId");
+        const len = document.getElementById("limit");
+        const IdBar = document.getElementById("IdBar");
+        
+        input.addEventListener("input", function (event) {
+            len.textContent = input.value.length;
+            if(input.value.length >= 5) {
+                IdBar.style.color = "#FF0000";
+            }
+            else {
+                IdBar.style.color = "#09FBD3";
+            }
+        });
+
+        // $("#inputId").click(function(){
+        // });
+    </script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+    </div>
+    </div>
+</body>
+
+</html>

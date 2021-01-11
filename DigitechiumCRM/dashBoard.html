@@ -7,21 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Style/bootstrap.css">
     <link rel="stylesheet" href="Style/mainStyle.css">
-    <style>
-        
-    </style>
 </head>
 
 <body>
 
     <header class="container-fluid">
-        <a href="#"><img class="float-left" id="logo" src="Images/DigitechiumLogo.png" alt="DigiTeckium logo"></a>
+        <a href="#">
+            <img class="float-left" id="logo" src="Images/DigitechiumLogo.png" alt="DigiTeckium logo">
+        </a>
         <div class="float-right logOut icon"></div>
         <div class="float-right user icon"></div>
         <div class="float-right notification icon"></div>
-
-        <div class="float-right text-center"><button class="create-event">Create event</button></div>
-
     </header>
 
     <div class="d-flex" id="wrapper">
@@ -30,12 +26,12 @@
         <div id="sidebar-wrapper">
             <div class="list-group list-group-flush">
                 <ul>
-                    <li><a href="#" class="list-group-item activate">Dashboard</a></li>
-                    <li><a href="#" class="list-group-item">Agenda</a></li>
-                    <li><a href="#" class="list-group-item">Contact</a></li>
-                    <li><a href="#" class="list-group-item">Tableau Commercial</a></li>
-                    <li><a href="#" class="list-group-item">E-mail</a></li>
-                    <li><a href="#" class="list-group-item">SMS</a></li>
+                    <li><a href="dashBoard.html" class="list-group-item activate">Dashboard</a></li>
+                    <li><a href="agenda.html" class="list-group-item">Agenda</a></li>
+                    <li><a href="contact.html" class="list-group-item">Contact</a></li>
+                    <li><a href="TC.html" class="list-group-item">Tableau Commercial</a></li>
+                    <li><a href="email.html" class="list-group-item">E-mail</a></li>
+                    <li><a href="sms.html" class="list-group-item">SMS</a></li>
                 </ul>
             </div>
         </div>
@@ -44,60 +40,49 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="w-100 d-lg-none d-md-none phone-bar">
-                <button class="awesomeBtn d-lg-none d-md-none d-xl-none" id="menu-toggle">Menu</button>
-                <h3 class="text-center d-inline-block" id="header-phone">Dashboard</h3>
+                <button class="d-lg-none d-md-none d-xl-none" id="menu-toggle"></button>
+                <h3 class="text-center" id="header-phone">Dashboard</h3>
             </div>
-            <div class="container-fluid" id="page-content-wrapper" >
+            <div class="container-fluid" id="page-content-wrapper">
                 <div class="container mt-4">
                     <div class="row h-auto text-center">
                         <div class="col-sm-6 col-xl-3 col-lg-3 col-md-6">
-                            <div class="bg-success m-1">
+                            <div class="bg-light m-1">
                                 <h4>Users</h4>
                                 <p>1 Million</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-xl-3 col-lg-3 col-md-6">
-                            <div class="bg-success m-1">
+                            <div class="bg-light m-1">
                                 <h4>Pages</h4>
                                 <p>100 Million</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-xl-3 col-lg-3 col-md-6">
-                            <div class="bg-success m-1">
+                            <div class="bg-light m-1">
                                 <h4>Sessions</h4>
                                 <p>10 Million</p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-xl-3 col-lg-3 col-md-6">
-                            <div class="bg-success m-1">
+                            <div class="bg-light m-1">
                                 <h4>Bounce</h4>
                                 <p>30%</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container mt-5 mb-5">
+                <div class="container">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
-                            <div class="bg-info h-100 h-auto p-2 mb-5">
-                                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae a, autem nisi
-                                    quia
-                                    quisquam ullam beatae magnam blanditiis sequi omnis consectetur repellat tempora
-                                    esse
-                                    repudiandae numquam quos! Aperiam, animi nisi?
-                                </p>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="box bg-light">
+                                <h2 class="text-center">Contact</h2>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
-                            <div class="bg-primary h-100 h-auto p-2 mb-5">
-                                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae a, autem nisi
-                                    quia
-                                    quisquam ullam beatae magnam blanditiis sequi omnis consectetur repellat tempora
-                                    esse
-                                    repudiandae numquam quos! Aperiam, animi nisi?
-                                </p>
+                        <hr>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="box bg-light">
+                                <h2 class="text-center">Agenda</h2>
                             </div>
                         </div>
                     </div>
@@ -105,13 +90,12 @@
             </div>
         </div>
         <!-- /#page-content-wrapper -->
-
     </div>
     <!-- /#wrapper -->
 
     <!-- Bootstrap core JavaScript -->
-    <script src="JavaScripts/bootstrap.js"></script>
     <script src="JavaScripts/jquery.js"></script>
+    <script src="JavaScripts/bootstrap.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
