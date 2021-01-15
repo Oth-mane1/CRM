@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>CRM | TABLEAU COMMERCIAL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style/bootstrap.css">
+    <link rel="stylesheet" href="Style/mainStyle.css">
+    <link rel="stylesheet" href="Style/TCStyle.css">
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <a href="#"><img class="float-left" id="logo" src="Images/DigitechiumLogo.png" alt="DigiTeckium logo"></a>
+        <div class="float-right logOut icon"></div>
+        <div class="float-right user icon"></div>
+        <div class="float-right notification icon"></div>
+    </header>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="list-group list-group-flush">
+                <ul>
+                    <li><a href="dashBoard.html" class="list-group-item">Dashboard</a></li>
+                    <li><a href="agenda.html" class="list-group-item">Agenda</a></li>
+                    <li><a href="contact.html" class="list-group-item">Contact</a></li>
+                    <li><a href="TC.html" class="list-group-item activate">Tableau Commercial</a></li>
+                    <li><a href="email.html" class="list-group-item">E-mail</a></li>
+                    <li><a href="sms.html" class="list-group-item">SMS</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="w-100 d-lg-none d-md-none phone-bar">
+                <button class="d-lg-none d-md-none d-xl-none" id="menu-toggle"></button>
+                <h3 class="text-center" id="header-phone">Tableau Commercial</h3>
+            </div>
+            <div class="container-fluid mb-5" id="page-content-wrapper">
+                <div class="container">
+                    <div class="row mb-5 overflow-auto">
+                        <h1>Explorer le Tableau Commercial</h1>
+                        <table class="ml-2 mr-2" id="tab-c">
+                            <tr>
+                                <th>Date</th>
+                                <th>Activité</th>
+                                <th>Services</th>
+                                <th>Type</th>
+                                <th>Adhésion</th>
+                                <th>1<sup>er</sup> Conatct</th>
+                                <th>Rappel</th>
+                            </tr>
+                            <tr>
+                                <td>02-02-2020</td>
+                                <td>Commerce sarl</td>
+                                <td>Services</td>
+                                <td>client</td>
+                                <td>-</td>
+                                <td>01-02-2020</td>
+                                <td>rrr</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <div class="row">
+                        <button class="awesomeBtn" type="button" data-toggle="collapse" data-target="#ModifyContact"
+                            aria-expanded="false" aria-controls="ModifyContact">
+                            Modifier
+                        </button>
+                    </div>
+                    <div class="collapse" id="ModifyContact">
+                        <div class="card card-body">
+                            <form>
+                                <h1>Modifier un Evenement</h1>
+                                <p class="sub-head mb-5">Remplir le formulaire ci-dessous pour Modifier un element</p>
+                                
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>Date</label>
+                                </div>
+
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>Activité</label>
+                                </div>
+
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>Services</label>
+                                </div>
+
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>Type</label>
+                                </div>
+
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>Adhésion</label>
+                                </div>
+
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>1<sup>er</sup> Conatct</label>
+                                </div>
+
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>Rappel</label>
+                                </div>
+
+                                <button class="awesomeBtn">Modifier</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <form>
+                            <h1>Ajout Evenement</h1>
+                            <p class="sub-head mb-5">Remplir le formulaire ci-dessous pour ajouter un Evenement</p>
+                            
+                            <div class="textBox">
+                                <input class="input" type="text" required>
+                                <span class="bar"></span>
+                                <label>Date</label>
+                            </div>
+
+                            <div class="textBox">
+                                <input class="input" type="text" required>
+                                <span class="bar"></span>
+                                <label>Activité</label>
+                            </div>
+
+                            <div class="textBox">
+                                <input class="input" type="text" required>
+                                <span class="bar"></span>
+                                <label>Services</label>
+                            </div>
+
+                            <div class="textBox">
+                                <input class="input" type="text" required>
+                                <span class="bar"></span>
+                                <label>Type</label>
+                            </div>
+
+                            <div class="textBox">
+                                <input class="input" type="text" required>
+                                <span class="bar"></span>
+                                <label>Adhésion</label>
+                            </div>
+
+                            <div class="textBox">
+                                <input class="input" type="text" required>
+                                <span class="bar"></span>
+                                <label>1<sup>er</sup> Conatct</label>
+                            </div>
+
+                            <div class="textBox">
+                                <input class="input" type="text" required>
+                                <span class="bar"></span>
+                                <label>Rappel</label>
+                            </div>
+
+                            <button class="awesomeBtn">Ajouter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="JavaScripts/jquery.js"></script>
+    <script src="JavaScripts/bootstrap.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+    </div>
+    </div>
+</body>
+
+</html>

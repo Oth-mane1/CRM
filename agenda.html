@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>CRM | AGENDA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style/bootstrap.css">
+    <link rel="stylesheet" href="Style/mainStyle.css">
+    <link rel="stylesheet" href="Style/agendaStyle.css">
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <a href="#"><img class="float-left" id="logo" src="Images/DigitechiumLogo.png" alt="DigiTeckium logo"></a>
+        <div class="float-right logOut icon"></div>
+        <div class="float-right user icon"></div>
+        <div class="float-right notification icon"></div>
+    </header>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="list-group list-group-flush">
+                <ul>
+                    <li><a href="dashBoard.html" class="list-group-item">Dashboard</a></li>
+                    <li><a href="agenda.html" class="list-group-item activate">Agenda</a></li>
+                    <li><a href="contact.html" class="list-group-item">Contact</a></li>
+                    <li><a href="TC.html" class="list-group-item">Tableau Commercial</a></li>
+                    <li><a href="email.html" class="list-group-item">E-mail</a></li>
+                    <li><a href="sms.html" class="list-group-item">SMS</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="w-100 d-lg-none d-md-none phone-bar">
+                <button class="d-lg-none d-md-none d-xl-none" id="menu-toggle"></button>
+                <h3 class="text-center" id="header-phone">Agenda</h3>
+            </div>
+            <div class="container-fluid" id="page-content-wrapper">
+                <div class="container">
+                    <div class="row mb-5 overflow-auto">
+                        <h1>Explorer l'Agenda</h1>
+                        <table id="Events">
+                            <tr>
+                                <th>Titre</th>
+                                <th>Date</th>
+                            </tr>
+                            <tr>
+                                <td>Envoyer le recu ..</td>
+                                <td>22/01/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Le contrat numero 20</td>
+                                <td>22/04/2021</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="container mb-5">
+                    <div class="row">
+                        <button class="awesomeBtn" type="button" data-toggle="collapse" data-target="#ModifyContact"
+                            aria-expanded="false" aria-controls="ModifyContact">
+                            Modifier
+                        </button>
+                    </div>
+
+                    <div class="collapse" id="ModifyContact">
+                        <div class="card card-body">
+                            <form>
+                                <h1>Modifier un événement</h1>
+                                <p class="sub-head mb-5">Remplir le formulaire ci-dessous pour modifier un Événement</p>
+
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>Titre</label>
+                                </div>
+
+                                <div class="textBox">
+                                    <input class="input" type="date" required>
+                                    <span class="bar"></span>
+                                    <label>Date</label>
+                                </div>
+
+                                <button class="awesomeBtn">Modifier</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5">
+                        <div class="row">
+                            <form>
+                                <h1>Ajout Événement</h1>
+                                <p class="sub-head mb-5">Remplir le formulaire ci-dessous pour ajouter un Evenement</p>
+
+                                <div class="textBox">
+                                    <input class="input" type="text" required>
+                                    <span class="bar"></span>
+                                    <label>Titre</label>
+                                </div>
+
+                                <div class="textBox">
+                                    <input class="input" type="date" required>
+                                    <span class="bar"></span>
+                                    <label>Date</label>
+                                </div>
+
+                                <button class="awesomeBtn">Ajouter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- SCRIPTS -->
+    <script>
+
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="JavaScripts/jquery.js"></script>
+    <script src="JavaScripts/bootstrap.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+    </div>
+    </div>
+</body>
+
+</html>

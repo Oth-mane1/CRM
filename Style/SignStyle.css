@@ -1,0 +1,277 @@
+/* * * Container Styles * * */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.left-panel {
+    background-color: #09fbd3;
+}
+
+.right-panel {
+    background-color: #09fbd3;
+    height: 100vh;
+    width: 15%;
+}
+
+.row {
+    height: 100vh;
+}
+
+#logo-img {
+    display: block;
+    margin: auto;
+}
+
+.loginForm {
+    width: 80%;
+    margin: 60px auto;
+}
+
+.sub-logo {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.sub-head {
+    display: block;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    padding: 3px 10px;
+    border-radius: 21px;
+    background-image: linear-gradient(to right, #08f7fe, #09fbd3);
+}
+
+
+h1 {
+    font-weight: bold;
+    margin: 80px auto 10px;
+}
+
+.copyright {
+    position: absolute;
+    text-align: center;
+    bottom: 5px;
+    left: 0;
+    font-size: small;
+    width: 100%;
+}
+
+.copyright-bottom {
+    visibility: hidden;
+}
+
+.signup {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.signup a {
+    color: #08f7fe;
+}
+
+.signup a:hover {
+    color: #00cfd6;
+}
+
+.submitBtn {
+    margin: auto;
+    display: block;
+    padding: 10px 30px;
+    font-size: 1em;
+    background-color: #000;
+    color: #FFF;
+    border: 2px solid;
+    border-radius: 10px;
+    outline: #09FBD3 !important;
+    transition: border .5s;
+}
+
+.submitBtn:hover {
+    border: 2px solid #09FBD3;
+}
+
+.submitBtn:active {
+    background-color: #09FBD3;
+}
+
+/* Awesome TextBox */
+.textBox {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -22px;
+    font-size: 1.2em;
+    color: #09FBD3;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 3px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #09FBD3;
+    transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+/* End Awesome TextBox */
+
+/********** Extra large devices only **********/
+@media (min-width: 1200px) {
+    #logo-img {
+        width: 60%;
+        height: auto;
+    }
+
+    .sub-logo {
+        top: 10%;
+        font-size: 4vw;
+        font-weight: 700;
+    }
+
+    h1 {
+        font-weight: bold;
+        margin: 60px auto 10px !important;
+    }
+}
+
+/********** Large devices only **********/
+@media (min-width: 993px) and (max-width: 1199px) {
+    #logo-img {
+        width: 70%;
+        height: auto;
+    }
+
+    .sub-logo {
+        top: 20%;
+        font-size: 4vw;
+        font-weight: 700;
+    }
+
+    .left-panel {
+        width: 100%;
+    }
+
+    h1 {
+        font-weight: bold;
+        margin: 60px auto 10px !important;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 769px) and (max-width: 992px) {
+    #logo-img {
+        width: 80%;
+        height: auto;
+    }
+
+    .sub-logo {
+        top: 20%;
+        font-size: 4vw;
+        font-weight: 700;
+    }
+
+    .left-panel {
+        width: 100%;
+    }
+
+    h1 {
+        font-weight: bold;
+        margin: 70px auto 10px !important;
+    }
+}
+
+/********** Small devices only **********/
+@media (max-width: 768px) {
+    #logo-img {
+        width: 150px;
+        height: auto;
+    }
+
+    .left-panel {
+        width: 100%;
+        height: auto;
+    }
+
+    .sub-logo { 
+        font-size: 4vw;
+        font-weight: 700;
+    }
+
+    .sub-head {
+        width: 85%;
+    }
+
+    .copyright {
+        visibility: hidden;
+    }
+
+    .copyright-bottom {
+        visibility: visible;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        font-size: small;
+        width: 100%;
+    }
+
+    h1 {
+        font-weight: bold;
+        margin: 30px auto 10px !important;
+    }
+}

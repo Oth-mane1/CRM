@@ -1,0 +1,170 @@
+/* * * Container Styles * * */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+Form {
+    width: 70%;
+    margin: auto;
+}
+
+.sub-head {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 3px 10px;
+    border-radius: 21px;
+    background-image: linear-gradient(to right, #08f7fe, #09fbd3);
+}
+
+
+h1 {
+    font-weight: bold;
+    margin: 10px auto 10px;
+    display: block;
+    text-align: center;
+}
+
+/* Awesome button */
+.awesomeBtn {
+    margin: auto;
+    display: block;
+    padding: 10px 30px;
+    font-size: 1em;
+    background-color: #000;
+    color: #FFF;
+    border: 2px solid;
+    border-radius: 10px;
+    outline: #09FBD3 !important;
+    transition: border .5s;
+}
+
+.awesomeBtn {
+    border: 2px solid #09FBD3;
+}
+
+.awesomeBtn:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+.awesomeBtn:active {
+    background-color: #09FBD3;
+}
+/* End Awesome button */
+
+/* Events Table */
+#Events {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#Events td,
+#Events th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#Events tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#Events tr:hover {
+    background-color: #ddd;
+}
+
+#Events th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #09FBD3;
+    color: white;
+}
+
+/* Awesome TextBox */
+.textBox {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -22px;
+    font-size: 1.2em;
+    color: #09FBD3;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 3px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #09FBD3;
+    transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+/* End Awesome TextBox */
+
+/********** Extra large devices only **********/
+@media (min-width: 1200px) {}
+
+/********** Large devices only **********/
+@media (min-width: 993px) and (max-width: 1199px) {}
+
+/********** Medium devices only **********/
+@media (min-width: 769px) and (max-width: 992px) {}
+
+/********** Small devices only **********/
+@media (max-width: 768px) {}

@@ -1,0 +1,232 @@
+/* * * Basic Styles * * */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Remove the place holder from input date type */
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+iframe {
+    width: 100%;
+    height: 100vh;
+}
+
+/* * * Header Styles * * */
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 14px 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #ffffffc5;
+}
+
+.icon:active {
+    background-color: #ffffff;
+}
+
+.logOut {
+    background: url(../Images/signOut.png) no-repeat;
+}
+
+.user {
+    background: url(../Images/user.png) no-repeat;
+}
+
+.notification {
+    background: url(../Images/notification.png) no-repeat;
+}
+
+/* * * Container Styles * * */
+
+header {
+    background-color: #09fbd3;
+    color: white;
+    height: 70px;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+    margin: 10px 0;
+}
+
+#title-logo {
+    height: auto;
+    margin: 25px auto;
+}
+
+/* End copyright */
+
+/* Awesome buttom */
+.awesomeBtn {
+    padding: 10px 15px;
+    margin: 2px;
+    font-size: 1em;
+    background-color: #000;
+    color: #FFF;
+    border: 2px solid #09FBD3;
+    border-radius: 10px;
+    outline: #09FBD3 !important;
+    transition: border .5s;
+}
+
+.awesomeBtn:hover {
+    background-color: #ffffff23;
+}
+
+.awesomeBtn:active {
+    background-color: #09FBD3;
+}
+
+/* End Awesome Bottom */
+
+/* * * * * Side bar * * * * */
+#menu-toggle {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: transparent;
+    background-image: url(../Images/Menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: #09FBD3;
+    float: left;
+    border: 0;
+}
+
+#menu-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.158);
+}
+
+#menu-toggle:active {
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+#wrapper {
+    max-height: fit-content;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    background-color: #000;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+    height: auto;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+.list-group-item {
+    background-color: transparent;
+}
+
+.list-group ul li a:hover {
+    color: #09FBD3;
+    font-size: large;
+}
+
+.list-group ul li a {
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.activate {
+    font-size: larger !important;
+    color: #FFF;
+    margin: 5px auto;
+    border-radius: 5px !important;
+    background-color: #09FBD3;
+}
+
+.activate:hover {
+    color: #FFF !important;
+    font-size: larger !important;
+}
+
+.phone-bar {
+    background-color: #000;
+    height: 40px;
+    color: #FFF;
+}
+
+/* * * * * End Side bar * * * * */
+
+/* * * * * DashBoard Styles * * * * */
+.box {
+    padding: 5px;
+    margin: 20px 0;
+}
+
+/* * * * * End DashBoard Styles * * * * */
+
+
+/********** Extra large devices only **********/
+@media (min-width: 1200px) {}
+
+/********** Large devices only **********/
+@media (min-width: 993px) and (max-width: 1199px) {}
+
+/********** Medium devices only **********/
+@media (min-width: 769px) and (max-width: 992px) {}
+
+/********** Small devices only **********/
+@media (max-width: 768px) {
+    #wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    #wrapper {
+        overflow-x: hidden;
+    }
+
+    #header-phone {
+        margin: 0 !important;
+        padding-top: 1.5px;
+    }
+}

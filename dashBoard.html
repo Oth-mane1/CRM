@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>CRM | DASHBOARD</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style/bootstrap.css">
+    <link rel="stylesheet" href="Style/mainStyle.css">
+    <link rel="stylesheet" href="Style/dashboardStyle.css">
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <a href="#">
+            <img class="float-left" id="logo" src="Images/DigitechiumLogo.png" alt="DigiTeckium logo">
+        </a>
+        <div class="float-right logOut icon"></div>
+        <div class="float-right user icon"></div>
+        <div class="float-right notification icon"></div>
+    </header>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="list-group list-group-flush">
+                <ul>
+                    <li><a href="dashBoard.html" class="list-group-item activate">Dashboard</a></li>
+                    <li><a href="agenda.html" class="list-group-item">Agenda</a></li>
+                    <li><a href="contact.html" class="list-group-item">Contact</a></li>
+                    <li><a href="TC.html" class="list-group-item">Tableau Commercial</a></li>
+                    <li><a href="email.html" class="list-group-item">E-mail</a></li>
+                    <li><a href="sms.html" class="list-group-item">SMS</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="w-100 d-lg-none d-md-none phone-bar">
+                <button class="d-lg-none d-md-none d-xl-none" id="menu-toggle"></button>
+                <h3 class="text-center" id="header-phone">Dashboard</h3>
+            </div>
+            <div class="container-fluid" id="page-content-wrapper">
+                <div class="container mt-4">
+                    <div class="row h-auto text-center">
+                        <div class="col-sm-6 col-xl-3 col-lg-3 col-md-6">
+                            <div class="bg-light m-1">
+                                <h4>Users</h4>
+                                <p>1 Million</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 col-lg-3 col-md-6">
+                            <div class="bg-light m-1">
+                                <h4>Pages</h4>
+                                <p>100 Million</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 col-lg-3 col-md-6">
+                            <div class="bg-light m-1">
+                                <h4>Sessions</h4>
+                                <p>10 Million</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 col-lg-3 col-md-6">
+                            <div class="bg-light m-1">
+                                <h4>Bounce</h4>
+                                <p>30%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row mb-3">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="box todo-box bg-light">
+
+                                <div class="header">
+                                    <h2 class="text-center p-1">TO-DO</h2>
+                                    <p>Ajouter les taches d'aujourd'hui</p>
+                                    <input type="text" id="titre" placeholder="Titre...">
+                                    <span onclick="newElement()" class="addBtn">Ajouter</span>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Modal" tabindex="-1" role="dialog"
+                                        aria-labelledby="ModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content w-100">
+                                                <div class="modal-body">
+                                                    <p class="text-center text-danger">ERRUR!</p>
+                                                    <p class="text-dark text-center">
+                                                        Veillez remplir le champs pour Ajouté un élément
+                                                    </p>
+                                                    <button type="button" class="btn btn-danger mt-1"
+                                                        data-dismiss="modal">Close
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul id="TdList">
+                                    <li>Ajouté un client</li>
+                                    <li>Applé mr. flan</li>
+                                    <li>Modifier les cordonnées</li>
+                                    <li>passer une applle</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="box bg-light">
+                                <div class="header">
+                                    <h2 class="text-center">Agenda</h2>
+                                    <p>Explorer les Evenement d'aujourd'hui</p>
+                                </div>
+                                <table id="Events">
+                                    <tr>
+                                        <td>Envoyer le recu ..</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Le contrat numero 20</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="JavaScripts/jquery.js"></script>
+    <script src="JavaScripts/bootstrap.js"></script>
+
+    <!-- Script -->
+    <script src="JavaScripts/todo.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+    </div>
+    </div>
+</body>
+
+</html>
